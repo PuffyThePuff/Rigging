@@ -22,12 +22,14 @@ public class AnimationPlayer : MonoBehaviour
     }
     public void PlayAnimation(string name)
     {
-
+        headAnimator.Play("Reset");
         headAnimator.Play(name);
     }
 
     public void PlayTentanimaton(string name)
     {
+        tentacle1Animator.Play("Reset");
+        tentacle2Animator.Play("Reset");
         tentacle1Animator.Play(name);
         tentacle2Animator.Play(name);
     }
